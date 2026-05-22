@@ -1,0 +1,31 @@
+{
+  "num_epochs": 5000,
+  "batch_size": 256,
+  "learning_rate": 1e-3,
+  "eval_every": 25,
+  "seed": 42,
+
+  "model": {
+    "model_dim": 512,
+    "cells": ["cmos_sbc"],
+    "num_recs": 2,
+    "positional_encodings_dims": 0,
+    "skip": true,
+    "aggregate": "sum",
+    "num_fcs": 1
+  },
+
+  "cell_configs": {
+    "cmos_sbc": {
+      "state_dim": 512,
+      "parallel": true,
+      "norm": null,
+      "dropout": 0.2,
+      "post_activation": "relu",
+      "kernel_scale": 1.0,
+      "surr_alpha": 1.0,
+      "beta1_init_scale": 0.5,
+      "delta_init_scale": 0.5
+    }
+  }
+}

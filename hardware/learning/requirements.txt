@@ -1,0 +1,19 @@
+# Core ML framework
+jax>=0.4.20
+jaxlib>=0.4.20
+flax>=0.8.0
+optax>=0.1.7
+
+# Audio processing
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Data & visualization
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+
+# Utilities
+tqdm>=4.65.0

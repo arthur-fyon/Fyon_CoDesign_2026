@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "task_name": "real_audio_binary",
+    "task_type": "classification",
+    "seed": 56,
+    "task_params": {
+      "seq_length": 101,
+      "input_size": 13,
+      "output_size": 2
+    },
+    "timestamp": "2025-11-28T14:18:10",
+    "audio_source_path": "data/speech_commands_v0.02/right/18f8afd5_nohash_3.wav"
+  },
+  "model_parameters_shapes": {
+    "pre_proj": {
+      "kernel": [
+        13,
+        4
+      ],
+      "bias": [
+        4
+      ]
+    },
+    "recurrent_layers": [
+      {
+        "cells": {
+          "cmos_sbc": {
+            "alphas": [
+              1,
+              1,
+              4
+            ],
+            "beta1": [
+              1,
+              1,
+              4
+            ],
+            "delta": [
+              1,
+              1,
+              4
+            ],
+            "initial_state": [
+              1,
+              4
+            ],
+            "cand_nn_kernel": [
+              4,
+              4
+            ],
+            "cand_nn_bias": [
+              4
+            ],
+            "post_proj_nn_kernel": [
+              4,
+              4
+            ],
+            "post_proj_nn_bias": [
+              4
+            ]
+          }
+        }
+      },
+      {
+        "cells": {
+          "cmos_sbc": {
+            "alphas": [
+              1,
+              1,
+              4
+            ],
+            "beta1": [
+              1,
+              1,
+              4
+            ],
+            "delta": [
+              1,
+              1,
+              4
+            ],
+            "initial_state": [
+              1,
+              4
+            ],
+            "cand_nn_kernel": [
+              4,
+              4
+            ],
+            "cand_nn_bias": [
+              4
+            ],
+            "post_proj_nn_kernel": [
+              4,
+              4
+            ],
+            "post_proj_nn_bias": [
+              4
+            ]
+          }
+        }
+      }
+    ],
+    "fcs": [
+      {
+        "kernel": [
+          4,
+          2
+        ],
+        "bias": [
+          2
+        ]
+      }
+    ]
+  },
+  "inference_data_shapes": {
+    "inputs": [
+      101,
+      13
+    ],
+    "outputs": [
+      101,
+      2
+    ],
+    "targets": [
+      101,
+      2
+    ],
+    "recurrent_tracking": [
+      {
+        "cells": {
+          "cmos_sbc": {
+            "states": [
+              101,
+              4
+            ],
+            "candidates": [
+              101,
+              4
+            ],
+            "force_low": [
+              101,
+              4
+            ],
+            "hold": [
+              101,
+              4
+            ],
+            "force_high": [
+              101,
+              4
+            ],
+            "beta1": [
+              101,
+              4
+            ],
+            "beta2": [
+              101,
+              4
+            ],
+            "delta": [
+              101,
+              4
+            ]
+          }
+        }
+      },
+      {
+        "cells": {
+          "cmos_sbc": {
+            "states": [
+              101,
+              4
+            ],
+            "candidates": [
+              101,
+              4
+            ],
+            "force_low": [
+              101,
+              4
+            ],
+            "hold": [
+              101,
+              4
+            ],
+            "force_high": [
+              101,
+              4
+            ],
+            "beta1": [
+              101,
+              4
+            ],
+            "beta2": [
+              101,
+              4
+            ],
+            "delta": [
+              101,
+              4
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

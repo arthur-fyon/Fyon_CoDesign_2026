@@ -1,0 +1,17 @@
+# Core library dependencies
+jax
+flax
+optax
+orbax-checkpoint
+numpy
+
+# Benchmark extras
+librosa
+soundfile
+pandas
+scikit-learn
+
+# Experiment tracking and visualization
+wandb
+matplotlib
+seaborn

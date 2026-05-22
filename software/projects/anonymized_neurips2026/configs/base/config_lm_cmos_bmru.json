@@ -1,0 +1,54 @@
+{
+  "seed": 1,
+  "num_epochs": 50000,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "eval_every": 200,
+  "eval_num_batches": 50,
+  "final_eval_num_batches": 200,
+  "early_stop_patience": 40,
+  "z_penalty_coeff": 1e-4,
+  "z_penalty_type": "l2",
+  "early_stop_perfect_acc_threshold": 1.0,
+  "early_stop_perfect_acc_patience": 9999,
+  "gradient_clip_norm": 1.0,
+  "use_mixed_precision": false,
+  "anneal_epochs": -1,
+  "anneal_final_factor": 1.0,
+  "optimizer": {
+    "type": "adamw",
+    "b1": 0.9,
+    "b2": 0.99,
+    "eps": 1e-8,
+    "weight_decay": 0.0001
+  },
+  "lr_schedule": {
+    "warmup_epochs": 0.01,
+    "min_lr_factor": 0.01
+  },
+  "model": {
+    "cells": ["cmos_bmru"],
+    "num_recs": 6,
+    "model_dim": 256,
+    "mlp_hidden_dim": 256,
+    "mlp_activation": "glu",
+    "mlp_dropout": 0.1,
+    "rec_dropout": 0.0,
+    "positional_encodings_dims": 0,
+    "skip": true,
+    "aggregate": "sum",
+    "norm": "layer",
+    "use_gating": false,
+    "post_rec_norm": "partial",
+    "conv_kernel_size": 4
+  },
+  "cell_configs": {
+    "cmos_bmru": {
+      "state_dim": 256,
+      "parallel": true,
+      "surr_alpha": 1.0,
+      "epsilon": 1.0,
+      "bidirectional": false
+    }
+  }
+}
