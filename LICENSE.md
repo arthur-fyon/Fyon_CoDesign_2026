@@ -67,7 +67,7 @@ If requested by Licensee and accepted by ULiège, ULiège shall provide such sup
 
 This Agreement applies only to the Software as licensed hereunder to Licensee. Possible later versions released by ULiège are not part of this License.
 
-* *
+** **
 
 
 **6.	FINANCIAL COMPENSATION**
