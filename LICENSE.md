@@ -7,7 +7,7 @@ This software license agreement applies to the arthur-fyon/Fyon\_CoDesign\_2026 
 
 
 
-**1. 	BACKGROUND **
+**1. 	BACKGROUND**
 
 
 ULiège owns certain software for use for training and evaluation of the Bistable Memory Recurrent Unit (BMRU) and First Quadrant BMRU that  implements a method covered by patents also owned by ULiège. The software and the patents (hereinafter “the Technology”) were developed by the laboratory of Professor Drion, the research unit for Neuroengineering Laboratory of the University of Liège. This software is entitled « Fyon\_CoDesign\_2026 ». 
@@ -118,7 +118,7 @@ Upon termination of this Agreement, Licensee shall cease all use of the Software
 
 
 
-**11.	ENTIRE AGREEMENT - SEVERABILITY **
+**11.	ENTIRE AGREEMENT - SEVERABILITY**
 
 
 This Agreement constitutes the entire agreement between the Parties concerning the subject matter hereof and supersedes any prior agreements, statements, negotiations, understandings, proposals or undertakings, oral or written, with respect to the subject matter hereof. If any provision of this Agreement shall be held to be illegal, invalid or unenforceable, each Party agrees that such provision shall be enforced to the maximum extent permissible so as to effect the intent of the Parties, and the validity, legality and enforceability of the remaining provisions of this Agreement shall not in any way be affected or impaired thereby. If necessary to effect the intent of the Parties, the Parties shall negotiate in good faith to amend this Agreement to replace the unenforceable language with enforceable language that reflects such intent as closely as possible.
